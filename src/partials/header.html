@@ -2,14 +2,73 @@
   <div class="logo"><img class="logo_img" src="../img/logo.png" alt="" /></div>
   <div class="nav">
     <ul class="list">
-      <li class="list_item" id="home">Home</li>
-      <li class="list_item" id="about">About</li>
-      <li class="list_item" id="popular">Popular</li>
-      <li class="list_item" id="#contacts">Contacts</li>
+      <li class="list_item" > 
+         <a href="../index.html" class="link">Home</a>
+        </li>
+      <li class="list_item" >
+        <a href="../index.html#about" class="link">About</a>
+      </li>
+      <li class="list_item" >
+        <a href="../index.html#popular" class="link">Popular</a>
+      </li>
+      <li class="list_item" >
+        <a href="../index.html#contacts" class="link">Contacts</a>
+      </li>
     </ul>
   </div>
   <div class="cart">
-    <img class="search_icon" src="../img/sprite.svg#search" alt="search" />
-    <img class="cart_icon" src="../img/sprite.svg#cart" alt="cart" />
+    <svg width="65" height="65">
+      <use href="/img/sprite.svg#search"></use>
+    </svg>
+    <svg width="65" height="65">
+      <use href="/img/sprite.svg#cart"></use>
+    </svg>
+   
+  </div>
+</div>
+<!-------------- Mobile menu ----------->
+  <div class="header-mobile">
+    <a href="../index.html.">
+      <img src="../img/logo.png" alt="logo" width="32" height="32" />
+    </a>
+    <button
+      class="menu-toggle js-open-menu is-open"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24">
+        <use href="/img/sprite.svg#menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-btn menu-toggle js-close-menu" type="button">
+      <svg class="modal-icon" width="24" height="24">
+        <use href="/img/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <nav class="navigation-burger">
+      <ul class="mobile-menu list">
+        <li class="navigation-burger-item">
+          <a href="../index.html" class="link">Home</a>
+
+        </li>
+   
+        <li class="navigation-burger-item">
+          <a href="../index.html#about" class="link">About</a>
+
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#popular" class="link">Popular</a>
+
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#contacts" class="link">Contacts</a>
+        </li>
+    
+      </ul>
+    </nav>
   </div>
 </div>
