@@ -1,0 +1,28 @@
+.app {
+  background-color: #fff;
+  border-radius: 30px;
+  min-width: 320px;
+  height: 192px;
+  margin-top: 100px;
+}
+
+.list_apps {
+  display: flex;
+  flex-direction: row;
+}
+.app_item {
+}
+.app_img {
+}
+
+@media only screen and (min-width: 768px) {
+  .app {
+    max-width: 100%;
+  }
+  .list_apps {
+  }
+  .app_item {
+  }
+  .app_img {
+  }
+}

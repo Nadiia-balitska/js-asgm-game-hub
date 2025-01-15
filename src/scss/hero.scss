@@ -1,40 +1,33 @@
 .hero {
-  //   background-image: url(../img/hero/tel.jpg);
-  //   border-radius: 110px;
-  //   mask-repeat: no-repeat;
-}
-.hero_img {
-  border-radius: 110px;
-  position: absolute;
-  margin: 0 auto;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+  background-image: url(../img/hero/tel.jpg);
+  border-radius: 65px;
+  mask-repeat: no-repeat;
   min-width: 320px;
+  min-height: 534px;
 }
+
 .text_hero {
-  position: relative;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 36px;
   text-align: center;
   color: #fff;
-  top: 40px;
   min-width: 300px;
+  padding-top: 60px;
 }
 .btn_discover {
   width: 150px;
   height: 60px;
-  position: relative;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
   border: none;
   background-color: #fff;
-  left: 80px;
-  bottom: -70px;
+  margin-top: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn_discover:hover {
   background-color: #c1bfbf;
@@ -42,13 +35,18 @@
 @media only screen and (min-width: 768px) {
   .text_hero {
     max-width: 600px;
-    top: 100px;
+    padding-top: 100px;
     text-align: start;
     padding-left: 20px;
     font-size: 40px;
   }
   .btn_discover {
-    left: 20px;
-    bottom: -140px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .hero {
+    min-height: 483px;
+    max-width: 1440px;
+    background-image: url(../img/hero/desc.jpg);
   }
 }
