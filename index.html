@@ -2,33 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="/game-hub-noroff-assigment/assets/logo-520c8700.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Game Hub</title>
     
-    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/index-c082077a.css">
+    <script type="module" crossorigin src="/game-hub-noroff-assigment/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/index-88a6fb43.css">
   </head>
   <body>
     <div class="header_desc">
   <div class="logo"><img class="logo_img" src="../img/logo.png" alt="" /></div>
   <div class="nav">
     <ul class="list">
-      <li class="list_item" id="home">Home</li>
-      <li class="list_item" id="about">About</li>
-      <li class="list_item" id="popular">Popular</li>
-      <li class="list_item" id="#contacts">Contacts</li>
+      <li class="list_item" > 
+         <a href="../index.html" class="link">Home</a>
+        </li>
+      <li class="list_item" >
+        <a href="../index.html#about" class="link">About</a>
+      </li>
+      <li class="list_item" >
+        <a href="../index.html#popular" class="link">Popular</a>
+      </li>
+      <li class="list_item" >
+        <a href="../index.html#contacts" class="link">Contacts</a>
+      </li>
     </ul>
   </div>
   <div class="cart">
-    <img class="search_icon" src="../img/sprite.svg#search" alt="search" />
-    <img class="cart_icon" src="../img/sprite.svg#cart" alt="cart" />
+    <svg width="65" height="65">
+      <use href="/game-hub-noroff-assigment/assets/sprite-4089b364.svg#search"></use>
+    </svg>
+    <svg width="65" height="65">
+      <use href="/game-hub-noroff-assigment/assets/sprite-4089b364.svg#cart"></use>
+    </svg>
+   
+  </div>
+</div>
+<!-------------- Mobile menu ----------->
+  <div class="header-mobile">
+    <a href="../index.html.">
+      <img src="../img/logo.png" alt="logo" width="32" height="32" />
+    </a>
+    <button
+      class="menu-toggle js-open-menu is-open"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24">
+        <use href="/game-hub-noroff-assigment/assets/sprite-4089b364.svg#menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-btn menu-toggle js-close-menu" type="button">
+      <svg class="modal-icon" width="24" height="24">
+        <use href="/game-hub-noroff-assigment/assets/sprite-4089b364.svg#close"></use>
+      </svg>
+    </button>
+
+    <nav class="navigation-burger">
+      <ul class="mobile-menu list">
+        <li class="navigation-burger-item">
+          <a href="../index.html" class="link">Home</a>
+
+        </li>
+   
+        <li class="navigation-burger-item">
+          <a href="../index.html#about" class="link">About</a>
+
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#popular" class="link">Popular</a>
+
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#contacts" class="link">Contacts</a>
+        </li>
+    
+      </ul>
+    </nav>
   </div>
 </div>
 
+    
+    
+    
+    
+    
+    
 
-    <!-- Loads the specified .html file -->
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/game-hub-noroff-assigment/game-hub-noroff-assigment/src/partials/vite-promo.html' -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- <script type="module" src="./main.js"></script> -->
+    
   </body>
 </html>
