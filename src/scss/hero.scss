@@ -5,6 +5,7 @@
   min-width: 320px;
   min-height: 534px;
   font-family: 'Poppins', sans-serif;
+  margin: 15px;
 }
 
 .text_hero {
@@ -35,6 +36,13 @@
   background-color: #c1bfbf;
 }
 @media only screen and (min-width: 425px) {
+  .hero {
+    min-height: 483px;
+    max-width: 1440px;
+    background-image: url(../img/hero/desc.jpg);
+    margin: 30px;
+  }
+
   .text_hero {
     max-width: 600px;
     padding-top: 100px;
@@ -45,10 +53,5 @@
   .btn_discover {
     margin-top: 30px;
     margin-left: 20px;
-  }
-  .hero {
-    min-height: 483px;
-    max-width: 1440px;
-    background-image: url(../img/hero/desc.jpg);
   }
 }
