@@ -5,9 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="/game-hub-noroff-assigment/assets/logo-520c8700.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Hub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/game-hub-noroff-assigment/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/index-8bed7a17.css">
+    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/index-3251c778.css">
   </head>
   <body>
     <div class="header">
@@ -33,10 +44,10 @@
     </div>
     <div class="cart">
       <svg class="search" width="65" height="65">
-        <use href="/game-hub-noroff-assigment/assets/sprite-3cfa34c4.svg#search"></use>
+        <use href="/game-hub-noroff-assigment/assets/sprite-dc4a73d7.svg#search"></use>
       </svg>
       <svg width="65" height="65">
-        <use href="/game-hub-noroff-assigment/assets/sprite-3cfa34c4.svg#cart"></use>
+        <use href="/game-hub-noroff-assigment/assets/sprite-dc4a73d7.svg#cart"></use>
       </svg>
     </div>
   </div>
@@ -90,21 +101,12 @@
 </div> -->
 
     <div class="hero" id="hero">
-  <!-- <div class="img_hero"><img src="../img/hero/desc.jpg" alt="" /></div> -->
-  <!-- <picture>
-    <source srcset="/img/hero/desc.jpg" media="(min-width:768px)" />
-    <source srcset="/img/hero/tel.jpg" media="(min-width:320px)" />
-    <img
-      src="/img/hero/desc.jpg"
-      alt="hero image"
-      class="hero_img"
-      width="1440px"
-    />
-  </picture> -->
   <p class="text_hero">
     GameHub is an online shop where users can purchase computer games. 
   </p>
-  <button type="button" class="btn_discover">Discover More</button>
+  <button type="button" class="btn_discover">
+    <a href="../index.html#list"></a>Discover More
+  </button>
 </div>
 
     <div class="app">
@@ -179,9 +181,196 @@
   </div>
 </section>
 
-    
-    
-    
+    <section class="popular" id="popular">
+  <div class="container gallery-container">
+    <h2 class="popular_title">Most Popular</h2>
+
+    <div class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/first-05b56ecf.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/second-a20e9174.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/3-ee2de751.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/4-46f67b5f.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/5-6bf27cc8.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/6-0a24e0c8.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/7-5f42a063.jpg" alt="" />
+        </li>
+        <li class="swiper-slide">
+          <img class="swiper-img" src="/game-hub-noroff-assigment/assets/8-31f924d2.jpg" alt="" />
+        </li>
+      </ul>
+
+      <div class="custom-prev">
+        <svg width="65" height="65">
+          <use href="/game-hub-noroff-assigment/assets/sprite-dc4a73d7.svg#icon-left"></use>
+        </svg>
+      </div>
+      <div class="custom-next">
+        <svg width="65" height="65">
+          <use href="/game-hub-noroff-assigment/assets/sprite-dc4a73d7.svg##icon-right"></use>
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="about" id="about">
+  <div class="about_container">
+    <h2 class="about_title">About Us</h2>
+    <div class="text_about">
+      <div class="arrow_div">
+        <p class="left_text">
+          <span class="about_span">GameHub</span> is an online shop where users
+          can purchase computer games. This gaming marketplace lets you buy tons
+          of video games online for any device. GameHub is a competitively
+          priced website with a huge range of games.
+        </p>
+        <div class="location">
+          <svg
+            width="32"
+            height="42"
+            viewBox="0 0 32 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 41.8334C15.475 41.8334 15.025 41.6945 14.65 41.4167C14.275 41.139 13.9938 40.7744 13.8063 40.323C13.0938 38.3786 12.1938 36.5556 11.1063 34.8542C10.0563 33.1529 8.575 31.1563 6.6625 28.8647C4.75 26.573 3.19375 24.3855 1.99375 22.3022C0.83125 20.2188 0.25 17.7015 0.25 14.7501C0.25 10.6876 1.76875 7.25008 4.80625 4.43758C7.88125 1.59036 11.6125 0.166748 16 0.166748C20.3875 0.166748 24.1 1.59036 27.1375 4.43758C30.2125 7.25008 31.75 10.6876 31.75 14.7501C31.75 17.9098 31.0937 20.5487 29.7812 22.6667C28.5063 24.7501 27.025 26.8161 25.3375 28.8647C23.3125 31.3647 21.775 33.448 20.725 35.1147C19.7125 36.7466 18.8688 38.4827 18.1938 40.323C18.0063 40.8091 17.7063 41.1911 17.2938 41.4688C16.9188 41.7119 16.4875 41.8334 16 41.8334ZM16 34.3855C16.6375 33.2049 17.35 32.0417 18.1375 30.8959C18.9625 29.7501 20.1625 28.2223 21.7375 26.3126C23.35 24.3681 24.6625 22.5799 25.675 20.948C26.725 19.2813 27.25 17.2154 27.25 14.7501C27.25 11.8681 26.1438 9.42022 23.9313 7.40633C21.7563 5.35772 19.1125 4.33341 16 4.33341C12.8875 4.33341 10.225 5.35772 8.0125 7.40633C5.8375 9.42022 4.75 11.8681 4.75 14.7501C4.75 17.2154 5.25625 19.2813 6.26875 20.948C7.31875 22.5799 8.65 24.3681 10.2625 26.3126C11.8375 28.2223 13.0188 29.7501 13.8063 30.8959C14.6313 32.0417 15.3625 33.2049 16 34.3855ZM16 19.9584C17.575 19.9584 18.9063 19.4549 19.9937 18.448C21.0812 17.4411 21.625 16.2084 21.625 14.7501C21.625 13.2917 21.0812 12.0591 19.9937 11.0522C18.9063 10.0452 17.575 9.54175 16 9.54175C14.425 9.54175 13.0938 10.0452 12.0063 11.0522C10.9188 12.0591 10.375 13.2917 10.375 14.7501C10.375 16.2084 10.9188 17.4411 12.0063 18.448C13.0938 19.4549 14.425 19.9584 16 19.9584Z"
+              fill="#1D1B20"
+            />
+          </svg>
+          <p>Mølleparken 4, 0459 Oslo</p>
+        </div>
+        <!-- <div class="arrow"></div> -->
+      </div>
+
+      <div class="last_text_container">
+        <div class="right_text_container">
+          <p class="right_text">
+            <span class="about_span">GameHub</span>is the largest online store
+            and the only one in USA where the assortment includes absolutely all
+            digital products:
+          </p>
+        </div>
+
+        <div class="game_list">
+          <ul class="left_text">
+            <li class="game_item">PlayStation</li>
+            <li class="game_item">Xbox</li>
+            <li class="game_item">Apple AppStore</li>
+            <li class="game_item">Steam</li>
+            <li class="game_item">Spotify</li>
+          </ul>
+          <ul class="right_text">
+            <li class="game_item">Netflix</li>
+            <li class="game_item">Nintendo</li>
+            <li class="game_item">Microsoft</li>
+            <li class="game_item">Google Play</li>
+            <li class="game_item">and another</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="contacts" id="contacts">
+  <div class="top_footer">
+    <img
+      class="logo_footer"
+      src="/game-hub-noroff-assigment/assets/logo-520c8700.png"
+      alt="logo"
+      width="421"
+      height="100"
+    />
+    <p class="footer_text">Write your phone number and we will contact you.</p>
+  </div>
+
+  <div class="bottom_footer">
+    <div class="icon_footer">
+      <svg
+        width="50"
+        height="88"
+        viewBox="0 0 50 88"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M48 2.33325H35.5C29.9747 2.33325 24.6756 4.52819 20.7686 8.43519C16.8616 12.3422 14.6667 17.6412 14.6667 23.1666V35.6666H2.16669V52.3333H14.6667V85.6666H31.3334V52.3333H43.8334L48 35.6666H31.3334V23.1666C31.3334 22.0615 31.7723 21.0017 32.5537 20.2203C33.3351 19.4389 34.395 18.9999 35.5 18.9999H48V2.33325Z"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <svg
+        width="88"
+        height="88"
+        viewBox="0 0 88 88"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M66.9167 21.0833H66.9583M23.1667 2.33325H64.8333C76.3393 2.33325 85.6667 11.6607 85.6667 23.1666V64.8332C85.6667 76.3392 76.3393 85.6666 64.8333 85.6666H23.1667C11.6607 85.6666 2.33334 76.3392 2.33334 64.8332V23.1666C2.33334 11.6607 11.6607 2.33325 23.1667 2.33325ZM60.6667 41.3749C61.1809 44.8426 60.5886 48.3842 58.974 51.4958C57.3594 54.6075 54.8048 57.1308 51.6735 58.7069C48.5421 60.283 44.9935 60.8316 41.5325 60.2746C38.0714 59.7177 34.874 58.0836 32.3952 55.6048C29.9163 53.1259 28.2822 49.9286 27.7253 46.4675C27.1684 43.0064 27.7169 39.4578 29.293 36.3265C30.8691 33.1951 33.3925 30.6405 36.5041 29.0259C39.6158 27.4113 43.1573 26.819 46.625 27.3333C50.1622 27.8578 53.4369 29.506 55.9654 32.0345C58.4939 34.563 60.1422 37.8377 60.6667 41.3749Z"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <svg
+        width="96"
+        height="80"
+        viewBox="0 0 96 80"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M93.8333 2.49991C89.8433 5.3144 85.4254 7.46703 80.75 8.87491C78.2406 5.98954 74.9056 3.94446 71.196 3.01627C67.4864 2.08807 63.5812 2.32156 60.0087 3.68513C56.4361 5.0487 53.3685 7.47658 51.2208 10.6404C49.073 13.8042 47.9487 17.5513 48 21.3749V25.5416C40.6776 25.7314 33.422 24.1075 26.8792 20.8143C20.3364 17.5211 14.7096 12.6609 10.5 6.66657C10.5 6.66657 -6.16668 44.1666 31.3333 60.8332C22.7522 66.6581 12.5298 69.5788 2.16666 69.1666C39.6667 89.9999 85.5 69.1666 85.5 21.2499C85.4962 20.0893 85.3846 18.9316 85.1667 17.7916C89.4192 13.5978 92.4201 8.30288 93.8333 2.49991Z"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="send_footer">
+      <input class="input_footer" type="text" placeholder="Phone number..." />
+
+      <button class="send_btn" type="button">
+        Send<svg
+          width="44"
+          height="30"
+          viewBox="0 0 44 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M42 2L20 24M42 2L28 42L20 24M42 2L2 16L20 24"
+            stroke="#1E1E1E"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
