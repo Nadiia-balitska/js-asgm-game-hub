@@ -1,17 +1,15 @@
 .app {
   background-color: #fff;
-  min-width: 320px;
+  // min-width: 320px;
   border-radius: 15px;
   max-height: auto;
-  display: flex;
-  flex-direction: row;
+  margin: 15px;
 }
 
 .list_apps {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -21,7 +19,7 @@
 }
 .app_item:first-child {
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .app_img {
@@ -39,12 +37,10 @@
     height: auto;
     border-radius: 30px;
     justify-content: space-between;
+    margin: 30px;
   }
   .list_apps {
     justify-content: space-between;
-
-    // gap: 40px;
-    // justify-content: space-evenly;
   }
   .app_item {
     display: block;

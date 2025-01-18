@@ -1,6 +1,7 @@
 .popular {
   width: 100%;
   overflow: hidden;
+  margin: 15px;
 }
 .swiper-pagination-bullet {
   background-color: #ec662c;
@@ -66,7 +67,10 @@
   z-index: 9999;
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (min-width: 424px) {
+  .popular {
+    margin: 30px;
+  }
   .custom-prev,
   .custom-next {
     display: flex;

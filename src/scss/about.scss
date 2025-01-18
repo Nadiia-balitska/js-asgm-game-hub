@@ -1,5 +1,6 @@
 .about {
   font-family: 'Poppins', sans-serif;
+  margin: 15px;
 }
 .about_container {
   background-color: #fff;
@@ -67,6 +68,9 @@
 }
 
 @media only screen and (min-width: 425px) {
+  .about {
+    margin: 30px;
+  }
   .about_container {
     max-width: 1440px;
   }
@@ -76,7 +80,6 @@
   .text_about {
     flex-direction: row;
     width: 100%;
-    max-width: 1050px;
   }
 
   .arrow_div {
@@ -87,5 +90,6 @@
 
   .last_text_container {
     flex-direction: column;
+    min-width: 50%;
   }
 }
