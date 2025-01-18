@@ -1,36 +1,52 @@
 .app {
   background-color: #fff;
   min-width: 320px;
-  // width: 440px;
   border-radius: 15px;
-
-  max-height: 146px;
+  max-height: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .list_apps {
   display: flex;
   flex-direction: row;
-  padding: 10px;
-  padding-right: 20px;
-  // gap: 1px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .app_item {
+  display: none;
 }
-.app_img {
+.app_item:first-child {
+  display: block;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
+.app_img {
+  border-radius: 30px;
+}
+
+.list_apps {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 425px) {
   .app {
-    max-width: 100%;
-    height: 192px;
+    flex-direction: row;
+    max-width: 1440px;
+    height: auto;
     border-radius: 30px;
+    justify-content: space-between;
   }
   .list_apps {
+    justify-content: space-between;
+
+    // gap: 40px;
+    // justify-content: space-evenly;
   }
   .app_item {
-  }
-  .app_img {
+    display: block;
   }
 }
