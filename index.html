@@ -7,7 +7,7 @@
     <title>Game Hub</title>
     
     <script type="module" crossorigin src="/game-hub-noroff-assigment/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/index-6ee10a50.css">
+    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/index-8bed7a17.css">
   </head>
   <body>
     <div class="header">
@@ -108,7 +108,7 @@
 </div>
 
     <div class="app">
-  <ul class="list_apps">
+  <ul class="list_apps" id="list_apps">
     <li class="app_item">
       <img
         src="data:image/jpeg;base64,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"
@@ -157,8 +157,28 @@
   </ul>
 </div>
 
-    
-    
+    <section id="list">
+  <div>
+    <div class="search_form">
+      <h2 class="title_list">List of Products</h2>
+      <div class="search_box">
+        <input
+          class="search_input"
+          type="text"
+          placeholder="Search your game..."
+        />
+      </div>
+    </div>
+    <div class="list_img">
+      <picture>
+        <source srcset="/game-hub-noroff-assigment/assets/desc-13dea28f.png " media="(min-width:425px)" />
+        <source srcset="/game-hub-noroff-assigment/assets/phone-d40be63e.png " media="(min-width:320px)" />
+        <img src="/game-hub-noroff-assigment/assets/desc-13dea28f.png" alt="list image" />
+      </picture>
+    </div>
+  </div>
+</section>
+
     
     
     
