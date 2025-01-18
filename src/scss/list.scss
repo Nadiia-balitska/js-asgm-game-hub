@@ -1,6 +1,8 @@
 .list {
   margin: 15px;
 }
+.list_container {
+}
 .title_list {
   color: #fff;
   font-weight: 400;
@@ -15,22 +17,21 @@
   display: none;
 }
 .list_img {
-  width: 288px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
-.list_container {
-}
+
 @media only screen and (min-width: 425px) {
   .list {
     margin: 30px;
+    max-width: 1440px;
+  }
+  .list_container {
   }
   .title_list {
     font-size: 40px;
     text-align: start;
-  }
-  .list_container {
-    max-width: 1440px;
   }
   .search_form {
     display: flex;
@@ -51,17 +52,23 @@
   }
   .list_img {
     max-width: 1440px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    display: block;
+    margin: 30px auto;
   }
+
   .list_img picture {
     width: 100%;
-    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    margin: 0 auto;
+  }
+  .list_img img {
+    display: block;
+    margin: 0 auto;
   }
 }
