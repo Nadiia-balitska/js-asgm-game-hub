@@ -1,0 +1,354 @@
+.cart {
+}
+.cart_desc {
+  max-width: 1440px;
+}
+.text_go_back_cart {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #000000;
+  cursor: pointer;
+}
+.go_back_cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-family: 'Poppins', sans-serif;
+  fill: #000000;
+}
+
+.cart_hero {
+  background-color: #fff;
+  width: 1440px;
+  //   width: 100%;
+  height: 146px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.cart_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 25%;
+  letter-spacing: 0.01em;
+  color: #000;
+  align-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 30px 15px;
+}
+
+.cart_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 15px;
+  position: relative;
+}
+.cart_list::after {
+  content: '';
+  border: 1px solid #fff;
+  width: 667px;
+  height: 0px;
+}
+.cart_item {
+  display: flex;
+  flex-direction: row;
+  max-width: 673px;
+  height: 111px;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+}
+.cart_item_img {
+  border-radius: 10px;
+}
+.item_name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 67%;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+.amount_item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 67%;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+.price_cart {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 67%;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.total_price_cart {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 30px 15px;
+}
+
+.cart_payment_desc {
+  background-color: #fff;
+  border-radius: 41px;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  margin: 30px 15px;
+}
+
+.payment_subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 75%;
+  letter-spacing: 0.02em;
+  color: #000;
+  align-content: start;
+  margin: 20px 0;
+}
+.payment_cart_type {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #000;
+  margin: 10px 0;
+}
+.card_type_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details_card_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 514px;
+  gap: 30px;
+  margin: 30px 0;
+  position: relative;
+}
+.details_card_list::after {
+  content: '';
+  border: 1px solid #000;
+  width: 545px;
+  height: 0px;
+}
+
+.details_card_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  height: auto;
+}
+.details_card_item p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+
+.details_card_item input {
+  border-radius: 7px;
+  width: 514px;
+  height: 33px;
+  background: #ececec;
+  border: none;
+}
+
+.subtotal_cart_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.subtotal_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtotal_item p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+.card_checkout_btn {
+  width: 485px;
+  height: 63px;
+  background-color: #278e9a;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 75%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.card_checkout_btn:hover {
+  background-color: #1c646c;
+}
+
+.card_checkout_btn:focus {
+  background-color: #0c6974;
+}
+
+// ## Mobile ## //
+@media only screen and (max-width: 1439px) {
+  .cart_wrapper {
+    flex-direction: column;
+    max-width: 1439px;
+  }
+  .cart_left {
+    // min-width: 320px;
+    width: 100%;
+    max-width: 401px;
+  }
+  .cart_list::after {
+    width: 360px;
+  }
+  .cart_item {
+    gap: 0px;
+  }
+  .cart_item_img {
+    border: 1px solid #000;
+    border-radius: 13px;
+    width: 80px;
+    height: 43px;
+  }
+  .item_name {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .amount_item {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .price_cart {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .cart_payment_desc {
+    min-width: 320px;
+    max-width: 401px;
+  }
+  .payment_subtitle {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .payment_cart_type {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .card_type_list {
+  }
+  .card_type_item {
+    border: 1px solid #000;
+    width: 83px;
+    height: 37px;
+  }
+
+  .details_card_list::after {
+    width: 360px;
+  }
+  .details_card_item input {
+    border-radius: 7px;
+    height: 28px;
+    width: 339px;
+  }
+
+  .card_checkout_btn {
+    width: 334px;
+    height: 51px;
+    font-weight: 500;
+    font-size: 24px;
+    align-items: center;
+  }
+
+  .cart_hero {
+    padding: 28px;
+    width: 100%;
+  }
+
+  .go_back_cart {
+    // padding-left: 150px;
+  }
+  .go_back_cart svg {
+    width: 25px;
+    height: 25px;
+  }
+  .text_go_back_cart {
+    font-weight: 600;
+    font-size: 14px;
+    width: 0px;
+  }
+  .cart_title {
+    font-weight: 600;
+    font-size: 40px;
+    height: auto;
+    width: auto;
+  }
+}
