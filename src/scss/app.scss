@@ -1,9 +1,8 @@
 .app {
   background-color: #fff;
-  // min-width: 320px;
   border-radius: 15px;
   max-height: auto;
-  margin: 15px;
+  margin: 15px auto;
 }
 
 .list_apps {
@@ -37,7 +36,7 @@
     height: auto;
     border-radius: 30px;
     justify-content: space-between;
-    margin: 30px;
+    margin: 30px auto;
   }
   .list_apps {
     justify-content: space-between;

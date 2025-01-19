@@ -1,5 +1,5 @@
 .contacts {
-  margin: 15px;
+  margin: 15px auto;
 }
 .top_footer {
   display: flex;
@@ -61,7 +61,7 @@
 
 @media only screen and (min-width: 425px) {
   .contacts {
-    margin: 30px;
+    margin: 30px auto;
   }
   .top_footer {
     flex-direction: row;

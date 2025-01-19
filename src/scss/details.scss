@@ -1,5 +1,5 @@
 .details {
-  margin: 15px;
+  margin: 15px auto;
 }
 .go_back {
   display: flex;
@@ -80,7 +80,7 @@
 
 @media only screen and (min-width: 768px) {
   .details {
-    margin: 30px;
+    margin: 30px auto;
     max-width: 1440px;
   }
   .wraper {

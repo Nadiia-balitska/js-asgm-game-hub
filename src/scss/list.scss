@@ -1,5 +1,5 @@
 .list {
-  margin: 15px;
+  margin: 15px auto;
 }
 .list_container {
 }
@@ -24,7 +24,7 @@
 
 @media only screen and (min-width: 425px) {
   .list {
-    margin: 30px;
+    margin: 30px auto;
     max-width: 1440px;
   }
   .list_container {

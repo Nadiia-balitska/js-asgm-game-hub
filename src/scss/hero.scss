@@ -5,7 +5,7 @@
   min-width: 320px;
   min-height: 534px;
   font-family: 'Poppins', sans-serif;
-  margin: 15px;
+  margin: 15px auto;
 }
 
 .text_hero {
@@ -25,12 +25,14 @@
   font-weight: 500;
   border: none;
   background-color: #fff;
-  margin-top: 30px;
-  margin-left: 80px;
+  // margin-top: 30px;
+  // margin-left: 80px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 .btn_discover:hover {
   background-color: #c1bfbf;
@@ -40,7 +42,7 @@
     min-height: 483px;
     max-width: 1440px;
     background-image: url(../img/hero/desc.jpg);
-    margin: 30px;
+    margin: 30px auto;
   }
 
   .text_hero {
