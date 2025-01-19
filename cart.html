@@ -6,13 +6,349 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     
-    <script type="module" crossorigin src="/game-hub-noroff-assigment/assets/main-d07d8dcb.js"></script>
-    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/main-7d509900.css">
+    <script type="module" crossorigin src="/game-hub-noroff-assigment/assets/main-46100a24.js"></script>
+    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/main-4deedb03.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
+    <div class="header">
+  <div class="header-desktop">
+    <a href="../index.html.">
+      <img src="../img/logo.png" alt="logo" width="200" height="50" />
+    </a>
+
+    <nav class="nav">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="../index.html" class="link">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a href="../index.html#about" class="link">About</a>
+        </li>
+        <li class="navigation-item">
+          <a href="../index.html#popular" class="link">Popular</a>
+        </li>
+        <li class="navigation-item">
+          <a href="../index.html#contacts" class="link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="cart">
+      <svg class="search" width="65" height="65">
+        <path
+          fill="#CECBCB"
+          d="M33.633 33.9763L22.8224 23.7834C21.9644 24.4305 20.9777 24.9429 19.8623 25.3204C18.747 25.6979 17.5601 25.8867 16.3017 25.8867C13.1844 25.8867 10.5461 24.8687 8.38679 22.8329C6.22752 20.797 5.14789 18.3094 5.14789 15.3702C5.14789 12.431 6.22752 9.94346 8.38679 7.90758C10.5461 5.8717 13.1844 4.85376 16.3017 4.85376C19.4191 4.85376 22.0574 5.8717 24.2166 7.90758C26.3759 9.94346 27.4555 12.431 27.4555 15.3702C27.4555 16.5567 27.2553 17.6757 26.8549 18.7274C26.4545 19.779 25.9112 20.7093 25.2248 21.5183L36.0354 31.7112L33.633 33.9763ZM16.3017 22.6508C18.4467 22.6508 20.2699 21.943 21.7714 20.5273C23.2728 19.1116 24.0236 17.3926 24.0236 15.3702C24.0236 13.3478 23.2728 11.6288 21.7714 10.2131C20.2699 8.79743 18.4467 8.08959 16.3017 8.08959C14.1567 8.08959 12.3335 8.79743 10.832 10.2131C9.33057 11.6288 8.57983 13.3478 8.57983 15.3702C8.57983 17.3926 9.33057 19.1116 10.832 20.5273C12.3335 21.943 14.1567 22.6508 16.3017 22.6508Z"
+          fill="white"
+        />
+      </svg>
+      <a href="../cart.html">
+        <svg width="65" height="65">
+          <path
+            fill="#CECBCB"
+            d="M1.83331 1.70831H9.16665L14.08 24.5829C14.2476 25.3694 14.7068 26.0759 15.3771 26.5787C16.0475 27.0816 16.8863 27.3487 17.7466 27.3333H35.5666C36.427 27.3487 37.2658 27.0816 37.9362 26.5787C38.6065 26.0759 39.0657 25.3694 39.2333 24.5829L42.1666 10.25H11M18.3333 35.875C18.3333 36.8185 17.5125 37.5833 16.5 37.5833C15.4875 37.5833 14.6666 36.8185 14.6666 35.875C14.6666 34.9315 15.4875 34.1666 16.5 34.1666C17.5125 34.1666 18.3333 34.9315 18.3333 35.875ZM38.5 35.875C38.5 36.8185 37.6792 37.5833 36.6666 37.5833C35.6541 37.5833 34.8333 36.8185 34.8333 35.875C34.8333 34.9315 35.6541 34.1666 36.6666 34.1666C37.6792 34.1666 38.5 34.9315 38.5 35.875Z"
+            stroke="white"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <!-------------- Mobile menu ----------->
+  <div class="header-mobile">
+    <a href="./index.html">
+      <img src="/game-hub-noroff-assigment/assets/logo-520c8700.png" alt="logo" width="130" height="50" />
+    </a>
+
+    <button
+      class="menu-toggle js-open-menu is-open"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24">
+        <path
+          d="M3 12H21M3 6H21M3 18H21"
+          stroke="#F8F9F3"
+          style="
+            stroke: #f8f9f3;
+            stroke: color(display-p3 0.9725 0.9765 0.9529);
+            stroke-opacity: 1;
+          "
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-btn menu-toggle js-close-menu" type="button">
+      <svg class="modal-icon" width="24" height="24">
+        <path
+          fill="#ffe000"
+          style="fill: #ffffff"
+          d="M25.333 8.547l-1.88-1.88-7.453 7.453-7.467-7.453-1.867 1.88 7.453 7.453-7.453 7.453 1.867 1.88 7.467-7.453 7.453 7.453 1.88-1.88-7.467-7.453 7.467-7.453z"
+        ></path>
+      </svg>
+    </button>
+
+    <nav class="navigation-burger">
+      <ul class="mobile-menu list">
+        <li class="navigation-burger-item">
+          <a href="../index.html" class="link">Home</a>
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#about" class="link">About</a>
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#popular" class="link">Popular</a>
+        </li>
+        <li class="navigation-burger-item">
+          <a href="../index.html#contacts" class="link">Contacts</a>
+        </li>
+      </ul>
+      <div class="cart cart_menu">
+        <svg class="search" width="65" height="65">
+          <path
+            fill="#CECBCB"
+            d="M33.633 33.9763L22.8224 23.7834C21.9644 24.4305 20.9777 24.9429 19.8623 25.3204C18.747 25.6979 17.5601 25.8867 16.3017 25.8867C13.1844 25.8867 10.5461 24.8687 8.38679 22.8329C6.22752 20.797 5.14789 18.3094 5.14789 15.3702C5.14789 12.431 6.22752 9.94346 8.38679 7.90758C10.5461 5.8717 13.1844 4.85376 16.3017 4.85376C19.4191 4.85376 22.0574 5.8717 24.2166 7.90758C26.3759 9.94346 27.4555 12.431 27.4555 15.3702C27.4555 16.5567 27.2553 17.6757 26.8549 18.7274C26.4545 19.779 25.9112 20.7093 25.2248 21.5183L36.0354 31.7112L33.633 33.9763ZM16.3017 22.6508C18.4467 22.6508 20.2699 21.943 21.7714 20.5273C23.2728 19.1116 24.0236 17.3926 24.0236 15.3702C24.0236 13.3478 23.2728 11.6288 21.7714 10.2131C20.2699 8.79743 18.4467 8.08959 16.3017 8.08959C14.1567 8.08959 12.3335 8.79743 10.832 10.2131C9.33057 11.6288 8.57983 13.3478 8.57983 15.3702C8.57983 17.3926 9.33057 19.1116 10.832 20.5273C12.3335 21.943 14.1567 22.6508 16.3017 22.6508Z"
+            fill="white"
+          />
+        </svg>
+
+        <svg width="65" height="65">
+          <path
+            fill="#CECBCB"
+            d="M1.83331 1.70831H9.16665L14.08 24.5829C14.2476 25.3694 14.7068 26.0759 15.3771 26.5787C16.0475 27.0816 16.8863 27.3487 17.7466 27.3333H35.5666C36.427 27.3487 37.2658 27.0816 37.9362 26.5787C38.6065 26.0759 39.0657 25.3694 39.2333 24.5829L42.1666 10.25H11M18.3333 35.875C18.3333 36.8185 17.5125 37.5833 16.5 37.5833C15.4875 37.5833 14.6666 36.8185 14.6666 35.875C14.6666 34.9315 15.4875 34.1666 16.5 34.1666C17.5125 34.1666 18.3333 34.9315 18.3333 35.875ZM38.5 35.875C38.5 36.8185 37.6792 37.5833 36.6666 37.5833C35.6541 37.5833 34.8333 36.8185 34.8333 35.875C34.8333 34.9315 35.6541 34.1666 36.6666 34.1666C37.6792 34.1666 38.5 34.9315 38.5 35.875Z"
+            stroke="white"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </nav>
+  </div>
+</div>
+
+    <section class="cart">
+      <div class="cart_desc">
+        <div class="cart_hero">
+          <a class="go_back_cart" href="./index.html">
+            <svg
+              width="47"
+              height="44"
+              viewBox="0 0 47 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.4969 24.75L27.5969 40.15L23.5 44L0.5 22L23.5 0L27.5969 3.85L11.4969 19.25H46.5V24.75H11.4969Z"
+                fill="black"
+              />
+            </svg>
+            <p class="text_go_back_cart">Back to home</p>
+          </a>
+          <h2 class="cart_title">CART</h2>
+        </div>
+
+        <div class="cart_wrapper">
+          <div class="cart_left">
+            <p class="subtitle">You have only 4 items in your cart</p>
+            <ul class="cart_list">
+              <li class="cart_item">
+                <img
+                  src="/game-hub-noroff-assigment/assets/3-ee2de751.jpg"
+                  width="134px"
+                  height="74px"
+                  alt=""
+                  class="cart_item_img"
+                />
+                <p class="item_name">Fortnite</p>
+                <p class="amount_item">+ 1 -</p>
+                <p class="price_cart">40$</p>
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
+                    fill="#1D1B20"
+                  />
+                </svg>
+              </li>
+              <li class="cart_item">
+                <img
+                  src="/game-hub-noroff-assigment/assets/4-46f67b5f.jpg"
+                  width="134px"
+                  height="74px"
+                  alt=""
+                  class="cart_item_img"
+                />
+                <p class="item_name">CS2</p>
+                <p class="amount_item">+ 1 -</p>
+                <p class="price_cart">40$</p>
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
+                    fill="#1D1B20"
+                  />
+                </svg>
+              </li>
+              <li class="cart_item">
+                <img
+                  src="/game-hub-noroff-assigment/assets/second-a20e9174.jpg"
+                  width="134px"
+                  height="74px"
+                  alt=""
+                  class="cart_item_img"
+                />
+                <p class="item_name">PBG</p>
+                <p class="amount_item">+ 1 -</p>
+                <p class="price_cart">40$</p>
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
+                    fill="#1D1B20"
+                  />
+                </svg>
+              </li>
+              <li class="cart_item">
+                <img
+                  src="/game-hub-noroff-assigment/assets/5-6bf27cc8.jpg"
+                  width="134px"
+                  height="74px"
+                  alt=""
+                  class="cart_item_img"
+                />
+                <p class="item_name">Valorant</p>
+                <p class="amount_item">+ 1 -</p>
+                <p class="price_cart">40$</p>
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
+                    fill="#1D1B20"
+                  />
+                </svg>
+              </li>
+            </ul>
+            <p class="total_price_cart">Total price: 310$</p>
+          </div>
+
+          <div class="cart_payment_desc">
+            <p class="payment_subtitle">Card Details</p>
+            <p class="payment_cart_type">Card Type</p>
+
+            <ul class="card_type_list">
+              <li class="card_type_item">
+                <img
+                  src="/game-hub-noroff-assigment/assets/visa-d913a601.png"
+                  width="107px"
+                  height="60px"
+                  alt=""
+                  class="card_img"
+                />
+              </li>
+              <li class="card_type_item">
+                <img
+                  src="/game-hub-noroff-assigment/assets/masterCard-62bbef81.png"
+                  width="107px"
+                  height="60px"
+                  alt=""
+                  class="card_img"
+                />
+              </li>
+              <li class="card_type_item">
+                <img
+                  src="data:image/png;base64,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"
+                  width="107px"
+                  height="60px"
+                  alt=""
+                  class="card_img"
+                />
+              </li>
+            </ul>
+
+            <ul class="details_card_list">
+              <li class="details_card_item">
+                <p>Name on Card</p>
+                <input type="text" />
+              </li>
+              <li class="details_card_item">
+                <p>Card number</p>
+                <input type="text" />
+              </li>
+              <li class="details_card_item">
+                <p>Expire Date</p>
+                <input type="text" />
+              </li>
+              <li class="details_card_item">
+                <p>CVV</p>
+                <input type="text" />
+              </li>
+            </ul>
+
+            <ul class="subtotal_cart_list">
+              <li class="subtotal_item">
+                <p>Subtotal:</p>
+                <p>300$</p>
+              </li>
+              <li class="subtotal_item">
+                <p>Shipping:</p>
+                <p>10$</p>
+              </li>
+              <li class="subtotal_item">
+                <p>Total price(tex inc.):</p>
+                <p>310$</p>
+              </li>
+            </ul>
+            <button type="button" class="card_checkout_btn">
+              310$
+              <span>
+                Checkout
+                <svg
+                  width="30"
+                  height="27"
+                  viewBox="0 0 30 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.1314 12.3304L13.2105 6.28037L14.9716 4.76787L24.8586 13.4107L14.9716 22.0536L13.2105 20.5411L20.1314 14.4911L5.08463 14.4911V12.3304L20.1314 12.3304Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Payment Success ! -->
+        <div class="payment_sccs_desc"></div>
+      </div>
     </section>
     
   </body>
