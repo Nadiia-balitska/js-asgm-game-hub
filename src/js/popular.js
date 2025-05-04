@@ -23,7 +23,7 @@ async function loadPopularGames() {
       slide.classList.add('swiper-slide');
 
       slide.innerHTML = `
-        <a href="/details.html?id=${game.id}">
+        <a href="./details.html?id=${game.id}">
           <img class="swiper-img" src="${game.image}" alt="${game.title}" />
         </a>
       `;

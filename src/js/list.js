@@ -33,7 +33,7 @@ function displayGames(games) {
         <img src="${game.image}" alt="${game.title}" width="300px" class="game_img" />
         <h3 class="game_title">${game.title}</h3>
         <p class="game_price">${game.price} NOK</p>
-        <a href="/details.html?id=${game.id}" class="details_button" >Details</a>
+        <a href="./details.html?id=${game.id}" class="details_button" >Details</a>
       </div>
     `;
     productContainer.innerHTML += product;
