@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const productId = params.get('id');
   const addToCartBtn = document.getElementById('add-to-cart');
+  const loader = document.getElementById('loader');
 
   if (!productId) {
     document.querySelector('.details').innerHTML = '<p>Product not found.</p>';
@@ -11,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   fetchProductDetails(productId);
+
+  loader.classList.remove('hidden');
 
   async function fetchProductDetails(id) {
     try {
@@ -31,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
           addToCart(product);
         });
       }
+      loader.classList.add('hidden');
     } catch (error) {
       document.querySelector('.details').innerHTML =
         '<p>Failed to load product details.</p>';

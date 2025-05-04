@@ -1,5 +1,6 @@
 const popularUrl = 'https://api.noroff.dev/api/v1/gamehub';
 const swiperWrapper = document.querySelector('.swiper-wrapper');
+const loader = document.getElementById('loader');
 
 async function loadPopularGames() {
   try {

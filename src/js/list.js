@@ -1,8 +1,11 @@
 const apiUrl = 'https://api.noroff.dev/api/v1/gamehub';
 const productContainer = document.getElementById('product_list');
 const genreFilter = document.getElementById('genreFilter');
+const loader = document.getElementById('loader');
 
 let allGames = [];
+
+loader.classList.remove('hidden');
 
 async function getGames() {
   try {
@@ -10,6 +13,7 @@ async function getGames() {
     const response = await fetch(apiUrl);
     allGames = await response.json();
     displayGames(allGames);
+    loader.classList.add('hidden');
   } catch (error) {
     productContainer.innerHTML = '<p>Failed to load games 😢</p>';
   }

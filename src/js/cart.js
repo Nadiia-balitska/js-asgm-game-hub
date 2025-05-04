@@ -2,6 +2,7 @@ const cartList = document.querySelector('.cart_list');
 const totalPriceDisplay = document.querySelector('.total_price_cart');
 const subtotal = document.querySelector('.subtotal');
 const subtotal_btn = document.querySelector('#subtotal_btn');
+const loader = document.getElementById('loader');
 
 function loadCart() {
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
@@ -9,6 +10,7 @@ function loadCart() {
   if (cartItems.length === 0) {
     cartList.innerHTML = '<p class="empty">Your cart is empty 🛒</p>';
     totalPriceDisplay.textContent = 'Total price: 0 NOK';
+    loader.classList.add('hidden');
     return;
   }
 
@@ -20,6 +22,7 @@ function loadCart() {
     const itemElement = document.createElement('li');
     itemElement.classList.add('cart_item');
 
+    loader.classList.remove('hidden');
     itemElement.innerHTML = `
     <li class="cart_item">
      <img src="${item.image}" width="70" height="40" alt="${
@@ -36,6 +39,7 @@ function loadCart() {
     </li>
      
     `;
+    loader.classList.add('hidden');
 
     cartList.appendChild(itemElement);
     total += item.price * item.quantity;
