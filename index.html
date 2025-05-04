@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/game-hub-noroff-assigment/assets/logo-520c8700.png" />
+    <link rel="icon" type="image/svg+xml" href="/js-asgm-game-hub/assets/logo-520c8700.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Hub</title>
     <link
@@ -17,14 +17,14 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/game-hub-noroff-assigment/assets/main-a02e57cc.js"></script>
-    <link rel="stylesheet" href="/game-hub-noroff-assigment/assets/main-d9eebb24.css">
+    <script type="module" crossorigin src="/js-asgm-game-hub/assets/main-6364e57c.js"></script>
+    <link rel="stylesheet" href="/js-asgm-game-hub/assets/main-578dae16.css">
   </head>
   <body>
     <div class="header">
   <div class="header-desktop">
     <a href="../index.html">
-      <img src="/game-hub-noroff-assigment/assets/logo-520c8700.png" alt="logo" width="200" height="50" />
+      <img src="/js-asgm-game-hub/assets/logo-520c8700.png" alt="logo" width="200" height="50" />
     </a>
 
     <nav class="nav">
@@ -63,7 +63,7 @@
   <!-------------- Mobile menu ----------->
   <div class="header-mobile">
     <a href="../index.html">
-      <img src="/game-hub-noroff-assigment/assets/logo-520c8700.png" alt="logo" width="130" height="50" />
+      <img src="/js-asgm-game-hub/assets/logo-520c8700.png" alt="logo" width="130" height="50" />
     </a>
 
     <button
@@ -191,6 +191,8 @@
 </div>
 
     <section class="list" id="list">
+  <div id="loader" class="loader hidden"></div>
+
   <div class="list_container">
     <div class="search_form">
       <h2 class="title_list">List of Products</h2>
@@ -205,19 +207,14 @@
           <option value="rpg">RPG</option>
         </select>
       </div>
-      <!-- <div class="search_box">
-        <input
-          class="search_input"
-          type="text"
-          placeholder="Search your game..."
-        />
-      </div> -->
     </div>
     <div id="product_list" class="product_list"></div>
   </div>
 </section>
 
     <section class="popular" id="popular">
+  <div id="loader" class="loader hidden"></div>
+
   <div class="container gallery-container">
     <h2 class="popular_title">Most Popular</h2>
 
@@ -230,6 +227,8 @@
 </section>
 
     <section class="about" id="about">
+  <div id="loader" class="loader hidden"></div>
+
   <div class="about_container">
     <h2 class="about_title">About Us</h2>
     <div class="text_about">
@@ -291,7 +290,7 @@
   <div class="top_footer">
     <img
       class="logo_footer"
-      src="/game-hub-noroff-assigment/assets/logo-520c8700.png"
+      src="/js-asgm-game-hub/assets/logo-520c8700.png"
       alt="logo"
       width="421"
       height="100"
