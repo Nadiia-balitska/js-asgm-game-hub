@@ -32,106 +32,9 @@
 
         <div class="cart_wrapper">
           <div class="cart_left">
-            <p class="subtitle">You have only 4 items in your cart</p>
-            <ul class="cart_list">
-              <li class="cart_item">
-                <img
-                  src="./img/popular/3.jpg"
-                  width="134px"
-                  height="74px"
-                  alt=""
-                  class="cart_item_img"
-                />
-                <p class="item_name">Fortnite</p>
-                <p class="amount_item">+ 1 -</p>
-                <p class="price_cart">40$</p>
-                <svg
-                  width="16"
-                  height="18"
-                  viewBox="0 0 16 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
-                    fill="#1D1B20"
-                  />
-                </svg>
-              </li>
-              <li class="cart_item">
-                <img
-                  src="./img/popular/4.jpg"
-                  width="134px"
-                  height="74px"
-                  alt=""
-                  class="cart_item_img"
-                />
-                <p class="item_name">CS2</p>
-                <p class="amount_item">+ 1 -</p>
-                <p class="price_cart">40$</p>
-                <svg
-                  width="16"
-                  height="18"
-                  viewBox="0 0 16 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
-                    fill="#1D1B20"
-                  />
-                </svg>
-              </li>
-              <li class="cart_item">
-                <img
-                  src="./img/popular/second.jpg"
-                  width="134px"
-                  height="74px"
-                  alt=""
-                  class="cart_item_img"
-                />
-                <p class="item_name">PBG</p>
-                <p class="amount_item">+ 1 -</p>
-                <p class="price_cart">40$</p>
-                <svg
-                  width="16"
-                  height="18"
-                  viewBox="0 0 16 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
-                    fill="#1D1B20"
-                  />
-                </svg>
-              </li>
-              <li class="cart_item">
-                <img
-                  src="./img/popular/5.jpg"
-                  width="134px"
-                  height="74px"
-                  alt=""
-                  class="cart_item_img"
-                />
-                <p class="item_name">Valorant</p>
-                <p class="amount_item">+ 1 -</p>
-                <p class="price_cart">40$</p>
-                <svg
-                  width="16"
-                  height="18"
-                  viewBox="0 0 16 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 18C2.45 18 1.97917 17.8042 1.5875 17.4125C1.19583 17.0208 1 16.55 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8042 17.0208 14.4125 17.4125C14.0208 17.8042 13.55 18 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
-                    fill="#1D1B20"
-                  />
-                </svg>
-              </li>
-            </ul>
-            <p class="total_price_cart">Total price: 310$</p>
+            <ul class="cart_list"></ul>
+
+            <p class="total_price_cart">Total price: 0</p>
           </div>
 
           <div class="cart_payment_desc">
@@ -189,20 +92,12 @@
 
             <ul class="subtotal_cart_list">
               <li class="subtotal_item">
-                <p>Subtotal:</p>
-                <p>300$</p>
-              </li>
-              <li class="subtotal_item">
-                <p>Shipping:</p>
-                <p>10$</p>
-              </li>
-              <li class="subtotal_item">
                 <p>Total price(tex inc.):</p>
-                <p>310$</p>
+                <p class="subtotal">0</p>
               </li>
             </ul>
             <button type="button" class="card_checkout_btn">
-              310$
+              <span id="subtotal_btn"></span>
               <span>
                 Checkout
                 <svg
@@ -223,7 +118,13 @@
         </div>
 
         <!-- Payment Success ! -->
-        <div class="payment_sccs_desc"></div>
+        <div class="modal hidden" id="successModal">
+          <div class="modal-content">
+            <h2>✅ Payment Successful!</h2>
+            <p>Your order has been placed. Thank you!</p>
+            <button id="closeModalBtn">Continue Shopping</button>
+          </div>
+        </div>
       </div>
     </section>
     <script type="module" src="./main.js"></script>

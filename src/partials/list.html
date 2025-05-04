@@ -2,22 +2,25 @@
   <div class="list_container">
     <div class="search_form">
       <h2 class="title_list">List of Products</h2>
-      <div class="search_box">
+      <div class="filter_box">
+        <label class="genre" for="genreFilter">Genre: </label>
+        <select class="genre_filter" id="genreFilter">
+          <option value="all">All</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="sports">Sports</option>
+          <option value="horror">Horror</option>
+          <option value="rpg">RPG</option>
+        </select>
+      </div>
+      <!-- <div class="search_box">
         <input
           class="search_input"
           type="text"
           placeholder="Search your game..."
         />
-      </div>
+      </div> -->
     </div>
-    <a href="./details.html">
-      <div class="list_img">
-        <picture class="img">
-          <source srcset="/img/list/desc.png" media="(min-width:425px)" />
-          <source srcset="/img/list/phone.png" media="(min-width:320px)" />
-          <img src="/img/list/desc.png" alt="list image" />
-        </picture>
-      </div>
-    </a>
+    <div id="product_list" class="product_list"></div>
   </div>
 </section>

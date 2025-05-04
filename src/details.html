@@ -28,72 +28,20 @@
       </a>
       <div class="wraper">
         <div class="img_details">
-          <picture>
-            <source
-              class="img_game_details"
-              srcset="/img/details/desc.jpg"
-              media="(min-width:425px)"
-            />
-            <source
-              class="img_game_details"
-              srcset="/img/details/tel.jpg"
-              media="(min-width:320px)"
-            />
-            <img
-              class="img_game_details"
-              src="/img/details/desc.jpg"
-              alt="list image"
-            />
-          </picture>
+          <img
+            id="product-image"
+            class="img_game_details"
+            src="/img/details/desc.jpg"
+            alt="list image"
+          />
         </div>
         <div class="wraper_text">
           <div class="details_top">
-            <p>Fortnite</p>
-            <svg
-              class="stars"
-              width="173"
-              height="22"
-              viewBox="0 0 173 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.59441 21.8139L6.15506 14.1354L0.920898 8.97091L7.83575 8.28777L10.5249 1.04649L13.214 8.28777L20.1288 8.97091L14.8947 14.1354L16.4553 21.8139L10.5249 17.7424L4.59441 21.8139Z"
-                fill="white"
-              />
-              <path
-                d="M32.4459 21.8139L34.0065 14.1354L28.7724 8.97091L35.6872 8.28777L38.3763 1.04649L41.0655 8.28777L47.9803 8.97091L42.7461 14.1354L44.3068 21.8139L38.3763 17.7424L32.4459 21.8139Z"
-                fill="white"
-              />
-              <path
-                d="M60.2974 21.8139L61.858 14.1354L56.6239 8.97091L63.5387 8.28777L66.2278 1.04649L68.9169 8.28777L75.8318 8.97091L70.5976 14.1354L72.1583 21.8139L66.2278 17.7424L60.2974 21.8139Z"
-                fill="white"
-              />
-              <path
-                d="M88.1489 21.8139L89.7095 14.1354L84.4754 8.97091L91.3902 8.28777L94.0793 1.04649L96.7684 8.28777L103.683 8.97091L98.4491 14.1354L100.01 21.8139L94.0793 17.7424L88.1489 21.8139Z"
-                fill="white"
-              />
-              <path
-                d="M116 21.8139L117.561 14.1354L112.327 8.97091L119.242 8.28777L121.931 1.04649L124.62 8.28777L131.535 8.97091L126.301 14.1354L127.861 21.8139L121.931 17.7424L116 21.8139Z"
-                fill="white"
-              />
-              <path
-                d="M151.062 10.736C151.062 10.048 150.702 9.70399 149.982 9.70399C149.678 9.70399 148.334 9.77599 145.95 9.91999V0.36799H154.134V3.72799H149.526V6.53599C149.798 6.51999 150.23 6.51199 150.822 6.51199C152.038 6.51199 152.982 6.82399 153.654 7.44799C154.342 8.05599 154.686 8.96799 154.686 10.184V13.112C154.686 15.8 152.958 17.144 149.502 17.144C148.206 17.144 146.982 16.96 145.83 16.592V13.232C147.158 13.648 148.358 13.856 149.43 13.856C150.518 13.856 151.062 13.472 151.062 12.704V10.736Z"
-                fill="white"
-              />
-              <path
-                d="M158.868 17.24C157.54 17.24 156.876 16.616 156.876 15.368C156.876 14.104 157.54 13.472 158.868 13.472C160.212 13.472 160.884 14.104 160.884 15.368C160.884 16.616 160.212 17.24 158.868 17.24Z"
-                fill="white"
-              />
-              <path
-                d="M169.186 4.56799C169.186 4.16799 169.098 3.87199 168.922 3.67999C168.762 3.47199 168.45 3.36799 167.986 3.36799C167.522 3.36799 167.21 3.46399 167.05 3.65599C166.89 3.84799 166.81 4.15199 166.81 4.56799V12.8C166.81 13.2 166.89 13.504 167.05 13.712C167.21 13.904 167.522 14 167.986 14C168.45 14 168.762 13.904 168.922 13.712C169.098 13.504 169.186 13.2 169.186 12.8V4.56799ZM163.21 4.42399C163.21 3.07999 163.594 2.03199 164.362 1.27999C165.146 0.511991 166.354 0.127991 167.986 0.127991C169.618 0.127991 170.826 0.511991 171.61 1.27999C172.394 2.04799 172.786 3.09599 172.786 4.42399V12.944C172.786 14.272 172.394 15.32 171.61 16.088C170.826 16.856 169.618 17.24 167.986 17.24C166.354 17.24 165.146 16.864 164.362 16.112C163.594 15.344 163.21 14.288 163.21 12.944V4.42399Z"
-                fill="white"
-              />
-            </svg>
+            <p id="product-title">Fortnite</p>
           </div>
 
-          <p class="text_price">Price: 40$</p>
-          <p class="text_details">
+          <p class="text_price" id="product-price">Price: 40$</p>
+          <p class="text_details" id="product-description">
             Create, play, and battle with friends for free in Fortnite. Be the
             last player standing in Battle Royale and Zero Build, experience a
             concert or live event, or discover over a million creator made
@@ -102,7 +50,15 @@
             that's right for you and your friends. Find it all in Fortnite ...
             Drop In.
           </p>
-          <button type="button" class="btn_add_to_cart">
+          <button
+            type="button"
+            class="btn_add_to_cart"
+            id="add-to-cart"
+            data-id="..."
+            data-title="..."
+            data-price="..."
+            data-image="..."
+          >
             <svg
               width="211"
               height="69"
