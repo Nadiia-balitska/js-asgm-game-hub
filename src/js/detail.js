@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch(`${apiBase}/${id}`);
       const product = await response.json();
 
-      // Заповнення контенту
       document.getElementById('product-title').textContent = product.title;
       document.getElementById(
         'product-price'
@@ -27,14 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('product-image').src = product.image;
       document.getElementById('product-image').alt = product.title;
 
-      // Навішуємо подію додавання до кошика
       if (addToCartBtn) {
         addToCartBtn.addEventListener('click', () => {
           addToCart(product);
         });
       }
     } catch (error) {
-      console.error('Error loading product:', error);
       document.querySelector('.details').innerHTML =
         '<p>Failed to load product details.</p>';
     }

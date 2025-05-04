@@ -3,11 +3,11 @@ const closeModalBtn = document.getElementById('closeModalBtn');
 const checkoutBtn = document.querySelector('.card_checkout_btn');
 
 checkoutBtn.addEventListener('click', () => {
-  localStorage.removeItem('cart'); // Очистити кошик
-  modal.classList.remove('hidden'); // Показати модальне вікно
+  localStorage.removeItem('cart');
+  modal.classList.remove('hidden');
 });
 
 closeModalBtn.addEventListener('click', () => {
   modal.classList.add('hidden');
-  window.location.href = 'index.html'; // Повернутись на головну
+  window.location.href = 'index.html';
 });

@@ -6,16 +6,12 @@ async function loadPopularGames() {
     const response = await fetch(popularUrl);
     const gamesList = await response.json();
 
-    console.log('Fetched game IDs:', gamesList);
-
     const detailedGames = await Promise.all(
       gamesList.map(async game => {
         const gameRes = await fetch(`${popularUrl}/${game.id}`);
         return await gameRes.json();
       })
     );
-
-    console.log('Detailed games:', detailedGames);
 
     const popularGames = detailedGames.slice(0, 10);
 
@@ -65,7 +61,6 @@ async function loadPopularGames() {
       },
     });
   } catch (error) {
-    console.error('❌ Failed to load popular games:', error);
     swiperWrapper.innerHTML = '<li>Failed to load games 😢</li>';
   }
 }
